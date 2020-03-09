@@ -25,3 +25,8 @@ a {
   background-color: #FCCC0A;
   color: #333;
 }
+
+#aws {
+  width: 150px;
+  margin-top: 1.5em
+}

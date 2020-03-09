@@ -2,6 +2,48 @@ body {
     color: white
 }
 
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    width: 70%;
+    margin-right: 5em;
+    border-radius: 1em;
+    background-color: #333;
+    margin-top: 1em;
+    /* border-style: solid;
+    border-color: hotpink; */
+}
+
 .project > a > img {
     max-width: 50%
+}
+
+
+.sidebar {
+    display: flex;
+    font-size: 1em;
+    flex-direction: column;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.sidebar > #intro {
+    background-color: black;
+    width: 100%;
+    padding: 1em;
+    margin-top: 5em;
+    border-right-style: hidden;
+}
+
+.sidebar > a {
+    background-color: black;
+    width: 100%;
+    padding: 1em
+}
+
+.sidebar > .chosen {
+    background-color: green;
 }

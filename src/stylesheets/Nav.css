@@ -1,4 +1,4 @@
-.nav {
+.nav:not(.sidebar) {
     display: flex;
     justify-content: space-between;
     font-size: 1.5em;
@@ -21,7 +21,7 @@
     background-color: #2850AD;
 }
 
-.nav > *:hover {
+.nav > *:hover:not(#intro) {
     text-decoration: underline;
     color: #6CBE45;
 }

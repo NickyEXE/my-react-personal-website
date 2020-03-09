@@ -4,7 +4,6 @@ import '../stylesheets/Projects.css'
 import NoProjectSelected from '../components/projects/NoProjectSelected.js'
 
 const Projects = (props) => {
-    console.log(props)
     
     return(
         <div className="projects">
