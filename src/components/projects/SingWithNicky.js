@@ -1,14 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import screenshot from '../../assets/photos/SingWithNicky.png'
 import '../../stylesheets/Projects.css'
 
 const SingWithNicky = () => {
-
-    useEffect(() => {
-        fetch("http://singwithnicky.herokuapp.com/ping", {mode: 'no-cors'})
-        fetch("https://serene-scrubland-24770.herokuapp.com/ping")
-        }, [])
-
     return(
         <div className="project">
         <h1>Sing With Nicky</h1>

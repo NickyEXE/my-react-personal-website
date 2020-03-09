@@ -11,6 +11,9 @@ const ProjectSidebar = () => {
     <NavLink exact to="/projects/CentralParkExplorer" activeClassName="chosen">
         Central Park Explorer
     </NavLink>
+    <NavLink exact to="/projects/XReader" activeClassName="chosen">
+        XReader
+    </NavLink>
     <NavLink to="/projects" id="view-all">
         Go back to all projects
     </NavLink>

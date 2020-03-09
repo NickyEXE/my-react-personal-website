@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom'
 import '../stylesheets/Nav.css'
 
 const Nav = () => {
-    console.log("hello nav")
     return(
         <div className="nav"> 
             <NavLink exact to="/" activeClassName="selected">
