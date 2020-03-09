@@ -11,29 +11,6 @@ a {
   color: #FCCC0A
 }
 
-.jumbotron {
-  padding-bottom: 40%;
-  position: relative;
-  background-color:black;
-  color: white;
-}
-
-.jumbotron h1 {
-  padding-top: .5em;
-  font-size: 4em;
-}
-
-.jumbotron h3 {
-  background-color: #FCCC0A; 
-  color: #333;
-  width: 30%;
-  padding: .2em;
-  text-align: left;
-  position: absolute;
-  top: 40%;
-  font-size: 1em;
-}
-
 .subway {
   border-radius: 100%;
   padding-left: .2em;
@@ -47,86 +24,4 @@ a {
 .n-train {
   background-color: #FCCC0A;
   color: #333;
-}
-
-#profileJumbotron {
-  height: 70%;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-
-/* image */
-.bio-container > :first-child{
-  object-fit: cover;
-  width: 100%;
-}
-
-.bio-container > :nth-child(n+1){
-  text-align: center;
-  display: table;
-  height: 100%;
-}
-
-/* bio */
-.bio-container > :nth-child(2){
-  background-color: #00933C;
-}
-
-.bio-container > :nth-child(n+1) > * {
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align: center;
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-/* contact */
-.bio-container > :nth-child(3){
-  background-color: #EE352E;
-
-}
-
-@media only screen and (min-width: 800px) {
-  .bio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 500px
-  }
-  .jumbotron h3 {
-    font-size: 1.5em;
-  }
-  .jumbotron {
-    padding-bottom: 25%
-  }
-}
-
-
-@media only screen and (max-width: 800px) {
-  .jumbotron {
-    padding-bottom: 70%
-  }
-  .jumbotron h1 {
-    font-size: 2.5em;
-  }
-  .jumbotron h3 {
-    font-size: 1.25em;
-  }
-
-  .bio-container > :nth-child(n) {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-  }
-
-  .bio-container > :nth-child(n+1) {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
 }

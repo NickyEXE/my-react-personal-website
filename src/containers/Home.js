@@ -1,12 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import Jumbotron from '../components/Jumbotron.js'
 import ContactInfo from '../components/ContactInfo.js'
 import Bio from '../components/Bio.js'
 import Profile from '../assets/photos/profile.png'
-class Home extends Component {
+import '../stylesheets/Home.css'
 
-
-    render(){
+const Home = () => {
         return (
             <React.Fragment>
                 <Jumbotron/>
@@ -17,8 +16,6 @@ class Home extends Component {
                 </div>
             </React.Fragment>
         )
-    }
-
 }
 
 export default Home
