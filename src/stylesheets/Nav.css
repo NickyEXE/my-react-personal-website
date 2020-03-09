@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+.nav > * {
+    width: 100%;
+    border-color: white;
+    background-color: #808183;
+    color: white;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    text-decoration: none;
+}
+
+.nav > .selected {
+    background-color: #2850AD;
+}
+
+.nav > *:hover {
+    text-decoration: underline;
+    color: #6CBE45;
+}
