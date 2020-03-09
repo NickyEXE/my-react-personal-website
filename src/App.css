@@ -1,6 +1,65 @@
 .App {
   text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
+
+.jumbotron {
+  padding-bottom: 40%;
+  position: relative;
+  background-color:black;
+  color: white;
+}
+
+.jumbotron h1 {
+  padding-top: .5em;
+  font-size: 4em;
+}
+
+.jumbotron h3 {
+  background-color: #FCCC0A; 
+  color: #333;
+  width: 30%;
+  padding: .2em;
+  text-align: left;
+  font-size: 3em;
+  position: absolute;
+  top: 30%
+}
+
+.subway {
+  border-radius: 100%;
+  padding-left: .2em;
+  padding-right: .2em;
+}
+
+.m-train {
+  background-color: #FF6319;
+}
+
+.n-train {
+  background-color: #FCCC0A;
+  color: #333;
+}
+
+#profileJumbotron {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    padding-bottom: 70%
+  }
+  .jumbotron h1 {
+    font-size: 2.5em;
+  }
+  .jumbotron h3 {
+    font-size: 1em;
+  }
+}
+
 
 .App-logo {
   height: 40vmin;
