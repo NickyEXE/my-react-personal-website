@@ -17,6 +17,11 @@ a {
   padding-right: .2em;
 }
 
+.west-side-line {
+  background-color: #EE352E;
+  color: white;
+}
+
 .m-train {
   background-color: #FF6319;
 }

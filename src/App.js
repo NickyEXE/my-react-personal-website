@@ -22,10 +22,9 @@ function App() {
     <div className="App">
       <Nav/>
       <Switch>
-        {/* pass through component */}
         <Route path='/projects/singwithnicky' render={() => <Projects componentToUse={SingWithNicky} />}/>
         <Route path='/projects/centralparkexplorer' render={() => <Projects componentToUse={CentralParkExplorer} />}/>
-        <Route path='/projects/XReader' render={() => <Projects componentToUse={XReader}/>}/>
+        <Route path='/projects/xreader' render={() => <Projects componentToUse={XReader} />}/>
         <Route exact path='/projects' component={Projects}/>
         <Route exact path='/' component={Home}/>
       </Switch>
