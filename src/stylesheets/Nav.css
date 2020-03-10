@@ -6,15 +6,22 @@
 
 .nav > * {
     width: 100%;
-    border-color: white;
-    background-color: #808183;
     color: white;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-width: 1px;
-    padding-top: .2em;
     padding-bottom: .2em;
     text-decoration: none;
+    background: black;
+    border-top: solid;
+    border-top-width: thin;
+    margin-top: .3em;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: .2em;
+}
+
+.nav > *:not(:first){
+    border-left: solid;
+    border-left-width: thin;
 }
 
 .nav > .selected {
@@ -22,6 +29,7 @@
 }
 
 .nav > *:hover:not(#intro) {
-    text-decoration: underline;
-    color: #6CBE45;
+    text-decoration: none;
+    color: #FCCC0A;
+    border-color: white;
 }
