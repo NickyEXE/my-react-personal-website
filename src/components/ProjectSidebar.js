@@ -14,6 +14,12 @@ const ProjectSidebar = () => {
     <NavLink exact to="/projects/XReader" activeClassName="chosen">
         XReader
     </NavLink>
+    <NavLink exact to="/projects/LinkedInEndorser" activeClassName="chosen">
+        LinkedIn Endorser
+    </NavLink>
+    <NavLink exact to="/projects/SlackShameHider" activeClassName="chosen">
+        Slack Shame Hider
+    </NavLink>
     <NavLink to="/projects" id="view-all">
         Go back to all projects
     </NavLink>

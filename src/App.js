@@ -7,6 +7,8 @@ import Nav from './components/Nav.js'
 import SingWithNicky from './components/projects/SingWithNicky.js'
 import CentralParkExplorer from './components/projects/CentralParkExplorer.js'
 import XReader from './components/projects/XReader.js'
+import LinkedInEndorser from './components/projects/LinkedInEndorser.js'
+import SlackShameHider from './components/projects/SlackShameHider.js'
 import AWS from './assets/icons/aws.png'
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path='/projects/singwithnicky' render={() => <Projects componentToUse={SingWithNicky} />}/>
         <Route path='/projects/centralparkexplorer' render={() => <Projects componentToUse={CentralParkExplorer} />}/>
         <Route path='/projects/xreader' render={() => <Projects componentToUse={XReader} />}/>
+        <Route path='/projects/linkedinendorser' render={() => <Projects componentToUse={LinkedInEndorser}/>}/>
+        <Route path='/projects/slackshamehider' render={()=> <Projects componentToUse={SlackShameHider}/>}/>
         <Route exact path='/projects' component={Projects}/>
         <Route exact path='/' component={Home}/>
       </Switch>
