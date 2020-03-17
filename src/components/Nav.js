@@ -4,16 +4,14 @@ import '../stylesheets/Nav.css'
 
 const Nav = () => {
     return(
-        <div className="nav-container">
-            <div className="nav"> 
-                <NavLink exact to="/" activeClassName="selected">
-                    <span className="subway m-train">1</span>  About
-                </NavLink>
-                <NavLink to="/projects" activeClassName="selected">
-                    Projects
-                </NavLink>
+        <div className="nav"> 
+            <NavLink exact to="/" activeClassName="selected">
+                <span className="subway m-train">A</span>  About
+            </NavLink>
+            <NavLink to="/projects" activeClassName="selected">
+            <span className="subway n-train">B</span>   Projects
+            </NavLink>
         </div>
-      </div>
     )
 }
 

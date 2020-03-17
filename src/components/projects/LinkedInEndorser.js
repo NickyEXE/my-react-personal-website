@@ -2,7 +2,7 @@ import React from 'react';
 import screenshot from '../../assets/photos/SingWithNicky.png'
 import '../../stylesheets/Projects.css'
 
-const SingWithNicky = () => {
+const LinkedInEndorser = () => {
     return(
         <div className="project">
         <h1>Sing With Nicky</h1>

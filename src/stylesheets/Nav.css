@@ -19,13 +19,18 @@
     padding-top: .2em;
 }
 
+.nav > * > .subway {
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
 .nav > *:not(:first){
     border-left: solid;
     border-left-width: thin;
 }
 
 .nav > .selected {
-    background-color: #2850AD;
+    background-color:  #2850AD;
 }
 
 .nav > *:hover:not(#intro) {

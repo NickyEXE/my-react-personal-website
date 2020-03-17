@@ -31,6 +31,20 @@ a {
   color: #333;
 }
 
+.ace-train {
+  background-color: #2850AD;
+  color: white;
+}
+
+.g-train {
+  background-color: #6CBE45;
+  color: white;
+}
+
+.seven-train { 
+  background-color: #B933AD; 
+}
+
 #aws {
   width: 150px;
   margin-top: 1.5em
