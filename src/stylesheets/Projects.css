@@ -7,9 +7,89 @@ body {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+
+    .project{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1em;
+        /* flex-wrap: row-wrap; */
+        min-width: 80px;
+        /* max-width: 80px; */
+        max-height: 140px;
+        text-overflow: ellipsis
+    }
+    .sidebar > #intro {
+        display: none;
+    }
+    .sidebar > :last-child{
+        display: none;
+    }
+
+    .sidebar > * > span {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        padding-left: 10px;
+        transform: rotate(180deg);
+        text-align: right;
+    }
+
+    .projects {
+      flex-direction: column;
+    }
+
+    .projects > .nav {
+      flex-direction: row;
+    }
+        
+    .sidebar > a {
+        background-color: black;
+        width: 100%;
+        padding: 1em
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .sidebar {
+        display: flex;
+        font-size: 1em;
+        flex-direction: column;
+        min-width: 100px;
+        max-width: 100px;
+    }
+    
+    .sidebar > #intro {
+        background-color: black;
+        width: 100%;
+        padding: 1em;
+        margin-top: 5em;
+        border-right-style: hidden;
+    }
+    
+    .sidebar > a {
+        background-color: black;
+        width: 100%;
+        padding: 1em
+    }
+    
+    .sidebar > .chosen {
+        background-color: #6CBE45;
+    }
+    .project {
+        width: 70%;
+        max-width: 700px;
+    }
+
+}
+    
 .project {
-    width: 70%;
-    max-width: 700px;
+
     margin-right: auto;
     margin-left: auto;
     background-color: white;
@@ -107,31 +187,7 @@ body {
 }
 
 
-.sidebar {
-    display: flex;
-    font-size: 1em;
-    flex-direction: column;
-    min-width: 100px;
-    max-width: 100px;
-}
 
-.sidebar > #intro {
-    background-color: black;
-    width: 100%;
-    padding: 1em;
-    margin-top: 5em;
-    border-right-style: hidden;
-}
-
-.sidebar > a {
-    background-color: black;
-    width: 100%;
-    padding: 1em
-}
-
-.sidebar > .chosen {
-    background-color: #6CBE45;
-}
 
 .technologies {
     border-style: solid;

@@ -6,22 +6,22 @@ const ProjectSidebar = () => {
     <div className="nav sidebar"> 
     <div id="intro">Select a project:</div>
     <NavLink exact to="/projects/SingWithNicky" activeClassName="chosen">
-        Sing With Nicky
+        <span>Sing With Nicky</span>
     </NavLink>
     <NavLink exact to="/projects/CentralParkExplorer" activeClassName="chosen">
-        Central Park Explorer
+        <span>Central Park Explorer</span>
     </NavLink>
     <NavLink exact to="/projects/XReader" activeClassName="chosen">
-        XReader
+        <span>XReader</span>
     </NavLink>
     <NavLink exact to="/projects/LinkedInEndorser" activeClassName="chosen">
-        LinkedIn Endorser
+        <span>LinkedIn Endorser</span>
     </NavLink>
     <NavLink exact to="/projects/SlackShameHider" activeClassName="chosen">
-        Slack Shame Hider
+        <span>Slack Shame Hider</span>
     </NavLink>
     <NavLink to="/projects" id="view-all">
-        Go back to all projects
+        <span>Go back to all projects</span>
     </NavLink>
 </div>)
 }
