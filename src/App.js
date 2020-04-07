@@ -10,6 +10,7 @@ import XReader from './components/projects/XReader.js'
 import LinkedInEndorser from './components/projects/LinkedInEndorser.js'
 import SlackShameHider from './components/projects/SlackShameHider.js'
 import AWS from './assets/icons/aws.png'
+import PersonalSite from './components/projects/PersonalSite';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route path='/projects/xreader' render={() => <Projects componentToUse={XReader} />}/>
         <Route path='/projects/linkedinendorser' render={() => <Projects componentToUse={LinkedInEndorser}/>}/>
         <Route path='/projects/slackshamehider' render={()=> <Projects componentToUse={SlackShameHider}/>}/>
+        <Route path='/projects/thissite' render={()=> <Projects componentToUse={PersonalSite}/>}/>
         <Route exact path='/projects' component={Projects}/>
         <Route exact path='/index.html' component={Home}/>
         <Route exact path='/' component={Home}/>

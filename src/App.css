@@ -22,6 +22,11 @@ a {
   color: white;
 }
 
+.east-side-line{
+  background-color: #00933C;
+  color: white;
+}
+
 .m-train {
   background-color: #FF6319;
 }

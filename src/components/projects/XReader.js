@@ -6,7 +6,7 @@ const XReader = () => {
     <div className="project">
     <h1>XReader</h1>
     <div className="flex">
-        <div className="subway west-side-line">3</div>
+        <div className="subway east-side-line">4</div>
         <div className="highlight">
             <h3>An Extreme Reader for Gamers.</h3>
             <h5>Exports article links from the internet into a bullet hell JavaScript game and reads it out to you.</h5>
