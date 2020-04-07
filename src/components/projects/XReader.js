@@ -19,7 +19,8 @@ const XReader = () => {
         <li>The user gives it an article URL from the internet, and its Rails backend scrapes all of the words in that article's {"<p>"} tags, then renders them out as enemies to be shot or dodged.</li>
         <li>As you fight through the sentences, it renders walls to fly through and reads the text in a british accent.</li>
     </ul>
-    <p className="technologies">Technologies used: Vanilla JS, HTML5 text-to-speech API</p>
+    <p className="technologies">Technologies used: Vanilla JS, HTML5 text-to-speech API<br/>
+        <span className="github-links"><a href="https://nickyexe.github.io/XReader/">Deployed Page</a> | <a href="https://github.com/NickyEXE/XReader">Github</a></span></p>
     </div>)
 }
 

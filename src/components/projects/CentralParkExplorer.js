@@ -20,7 +20,8 @@ const CentralParkExplorer = () => {
         <li>It uses geolocation to position users within one of many Central Park areas, and provide things to do. It could also recommend places to stroll based on user interests, and accepted user reviews.</li>
         <li>To build the app, Nicky configured a PostGIS database, built the shapefiles outlining Central Park's areas using Google Earth for Developers, and did nearest-location analytics with the RGeo gem.</li>
         </ul>
-        <p className="technologies">Technologies used: PostGIS, Geolocation API</p>
+        <p className="technologies">Technologies used: PostGIS, Geolocation API<br/>
+        <span className="github-links"><a href="https://www.youtube.com/watch?v=ifG5abztRGU">Demo Video</a> | <a href="https://github.com/NickyEXE/Central-Park-Explorer"> Frontend Github</a> | <a href="https://github.com/NickyEXE/Central-Park-Explorer-BE">Backend Github</a></span></p>
         </div>
     )
 }

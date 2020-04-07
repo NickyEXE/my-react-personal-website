@@ -21,7 +21,8 @@ const LinkedInEndorser = () => {
             <li>But now they keep passing it down to following classes as a "great tool." I truly didn't think anyone would use it.</li>
             <li>Mistakes were probably made. My apologies to HR professionals confused about why a potential applicant has 20 endorsements for "Swing Dancing."</li>
         </ul>
-        <p className="technologies">Technologies used: JavaScript, Chrome Extensions API</p>
+        <p className="technologies">Technologies used: JavaScript, Chrome Extensions API<br/>
+        <span className="github-links"><a href="https://chrome.google.com/webstore/detail/linkedin-endorser/plpojgnkonpbkjhmlgaoehheeodhango?hl=en-US">Google Store Page</a> | <a href="https://github.com/NickyEXE/LinkedIn-Endorser">Github</a></span></p>
         
         </div>
     )

@@ -186,13 +186,23 @@ body {
     border-color: black;
 }
 
-
-
-
 .technologies {
     border-style: solid;
     border-width: thin;
     padding: .3em;
     font-size: .6em;
     text-align: center;
+}
+
+.technologies > .github-links {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.technologies > .github-links > a:link {
+    color:#2850AD;
+}
+
+.technologies > .github-links > a:visited {
+    color:#B933AD;
 }

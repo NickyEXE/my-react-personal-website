@@ -21,7 +21,8 @@ const SlackShameHider = () => {
             <li>When you do, it begins assigning each user a color, and covering their names and photos with it.</li>
             <li>That way, you can screenshot anonymously while keeping the same conversational cadence implied by multiple users.</li>
         </ul>
-        <p className="technologies">Technologies used: JavaScript, Chrome Extensions API</p>
+        <p className="technologies">Technologies used: JavaScript, Chrome Extensions API<br/>
+        <span className="github-links"><a href="https://chrome.google.com/webstore/detail/slack-shame-hider/alampgflbmggbbmdedahelekciobibki">Google Store Page</a> | <a href="https://github.com/NickyEXE/slack-shame-hider">Github</a></span></p>
         </div>
     )
 }
