@@ -13,7 +13,7 @@ const CentralParkExplorer = () => {
                 <h5>Using geolocation to recommend places within Central Park to visit.</h5>
             </div>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ifG5abztRGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe title="YouTube Demo" width="560" height="315" src="https://www.youtube.com/embed/ifG5abztRGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p className="header">Project Description:</p>
         <ul>
         <li>Central Park Explorer was built as Nicky's final project as a student at Flatiron School.</li>

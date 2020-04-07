@@ -30,6 +30,7 @@ function App() {
         <Route path='/projects/linkedinendorser' render={() => <Projects componentToUse={LinkedInEndorser}/>}/>
         <Route path='/projects/slackshamehider' render={()=> <Projects componentToUse={SlackShameHider}/>}/>
         <Route exact path='/projects' component={Projects}/>
+        <Route exact path='/index.html' component={Home}/>
         <Route exact path='/' component={Home}/>
       </Switch>
       <a href="https://en.wikipedia.org/wiki/Amazon_Web_Services"><img id="aws" src={AWS} alt="This website hosted on Amazon Web Services!"/></a>
