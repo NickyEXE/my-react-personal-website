@@ -21,7 +21,7 @@ const SingWithNicky = () => {
             <li>Because the online search bar limits request speed, the app makes use of background processing and websockets to slowly scrape each song and then broadcast each song to the user once they've been checked in a database, and storing every search in its own database so it can pull songs faster next time.</li>
             <li>It also allows you to store and queue songs, listen to the song on Spotify, see its lyrics, and search its own database quickly.</li>
         </ul>
-        <p className="technologies">Technologies used: Websockets, Background Processing, Jarow-Winkler, Spotify API<br/>
+        <p className="technologies">Technologies used: Websockets, Redis, Background Processing, Jarow-Winkler, Spotify API<br/>
         <span className="github-links"><a href="http://singwithnicky.herokuapp.com/">Deployed App</a> | <a href="https://github.com/NickyEXE/KaraokeImporter"> Frontend Github</a> | <a href="https://github.com/NickyEXE/KaraokeCodeGrabber">Backend Github</a></span></p>
         </div>
     )
