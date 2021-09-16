@@ -18,11 +18,7 @@ body {
         display: flex;
         justify-content: space-between;
         font-size: 1em;
-        /* flex-wrap: row-wrap; */
         min-width: 80px;
-        /* max-width: 80px; */
-        max-height: 140px;
-        text-overflow: ellipsis
     }
     .sidebar > #intro {
         display: none;
@@ -46,7 +42,7 @@ body {
     .projects > .nav {
       flex-direction: row;
     }
-        
+
     .sidebar > a {
         background-color: black;
         width: 100%;
@@ -63,7 +59,7 @@ body {
         min-width: 100px;
         max-width: 100px;
     }
-    
+
     .sidebar > #intro {
         background-color: black;
         width: 100%;
@@ -71,13 +67,13 @@ body {
         margin-top: 5em;
         border-right-style: hidden;
     }
-    
+
     .sidebar > a {
         background-color: black;
         width: 100%;
         padding: 1em
     }
-    
+
     .sidebar > .chosen {
         background-color: #6CBE45;
     }
@@ -87,7 +83,7 @@ body {
     }
 
 }
-    
+
 .project {
 
     margin-right: auto;
@@ -100,7 +96,7 @@ body {
 }
 
 .project > .header {
-    
+
     margin-bottom: .4em;
     font-weight: bolder;
     font-size: 1.1em;

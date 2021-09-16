@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 
 const ProjectSidebar = () => {
     return (
-    <div className="nav sidebar"> 
+    <div className="nav sidebar">
     <div id="intro">Select a project:</div>
     <NavLink exact to="/projects/SingWithNicky" activeClassName="chosen">
         <span>Sing With Nicky</span>
