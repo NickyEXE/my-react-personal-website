@@ -1,6 +1,5 @@
 import Paddle from "./Paddle"
 export default function playPong(element){
-  console.log(element)
   element.innerHTML = ""
   const canvas = document.createElement("canvas")
   canvas.tabIndex = "-1"

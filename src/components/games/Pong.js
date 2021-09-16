@@ -3,7 +3,6 @@ import playPong from '../../games/pong/pong';
 
 export default function Pong(){
   useEffect(() => {
-    console.log(document.querySelector("canvas"))
     playPong(document.querySelector("#arcade-main"))
   }, [])
 
