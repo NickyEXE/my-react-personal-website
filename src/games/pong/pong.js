@@ -1,6 +1,7 @@
 import Paddle from "./Paddle"
-export default function playPong(){
-  const canvas = document.querySelector("canvas")
+export default function playPong(element){
+  const canvas = document.createElement("canvas")
+  element.append(canvas)
 
   const ctx = canvas.getContext("2d");
 
@@ -49,6 +50,7 @@ export default function playPong(){
 
 
   const handleKeyDown = (e) => {
+      e.preventDefault()
       controller[e.keyCode] && (controller[e.keyCode].pressed = true)
   }
 
@@ -110,9 +112,9 @@ export default function playPong(){
       ctx.stroke();
   }
 
-
-  document.addEventListener("keydown", handleKeyDown)
-  document.addEventListener("keyup", handleKeyUp)
+  // element must have tabindex="-1"
+  element.addEventListener("keydown", handleKeyDown)
+  element.addEventListener("keyup", handleKeyUp)
 
 
   const render = () => {
