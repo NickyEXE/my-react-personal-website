@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../stylesheets/Projects.css'
 
 const CentralParkExplorer = () => {
 

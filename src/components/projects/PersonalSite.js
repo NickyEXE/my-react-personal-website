@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../../stylesheets/Projects.css'
-
 const PersonalSite = () => {
     return(
         <div className="project">

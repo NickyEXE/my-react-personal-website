@@ -1,6 +1,5 @@
 import React from 'react';
 import screenshot from '../../assets/photos/LinkedInEndorser.jpg'
-import '../../stylesheets/Projects.css'
 
 const LinkedInEndorser = () => {
     return(
@@ -23,7 +22,7 @@ const LinkedInEndorser = () => {
         </ul>
         <p className="technologies">Technologies used: JavaScript, Chrome Extensions API<br/>
         <span className="github-links"><a href="https://chrome.google.com/webstore/detail/linkedin-endorser/plpojgnkonpbkjhmlgaoehheeodhango?hl=en-US">Google Store Page</a> | <a href="https://github.com/NickyEXE/LinkedIn-Endorser">Github</a></span></p>
-        
+
         </div>
     )
 }

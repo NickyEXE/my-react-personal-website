@@ -1,6 +1,5 @@
 import React from 'react';
 import screenshot from '../../assets/photos/SingWithNicky.png'
-import '../../stylesheets/Projects.css'
 
 const SingWithNicky = () => {
     return(

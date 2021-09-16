@@ -4,7 +4,7 @@ import '../stylesheets/Nav.css'
 
 const Nav = () => {
     return(
-        <div className="nav"> 
+        <div className="nav">
             <NavLink exact to="/" activeClassName="selected">
                 <span className="subway m-train">A</span>  About
             </NavLink>

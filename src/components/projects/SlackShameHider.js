@@ -1,6 +1,5 @@
 import React from 'react';
 import screenshot from '../../assets/photos/SlackShameHider.jpg'
-import '../../stylesheets/Projects.css'
 
 const SlackShameHider = () => {
     return(
