@@ -1,35 +1,37 @@
-import { render } from '@testing-library/react';
-import { useState } from 'react';
+
 import React from 'react';
 import pongImg from "../../assets/photos/PONG.png"
-import playPong from '../../games/pong/pong';
-import { Route, Switch} from 'react-router-dom';
+import Pong from "../games/Pong";
+import GameScreen from "../games/GameScreen";
+import { Route, Switch, NavLink } from 'react-router-dom';
 
 const Arcade = () => {
 
-  const [selected, setSelected] = useState(null)
-
-  const renderArcade = (gameCallback) => {
-    setSelected("pong")
-    gameCallback(document.getElementById("arcade-main"))
-  }
-
   return (<div id="arcade">
     <p>This portion of the website works best in the browser.</p>
-    <div className={`arcade-machine neo-geo ${selected && "on"}`}>
-
-    <div className="arcade-header">
-      <h1>NICKY-DOVER™️</h1>
-      <div class="games">
-        <img src={pongImg} onClick={() => renderArcade(playPong)}/>
-        <img src={pongImg} onClick={() => renderArcade(playPong)}/>
-        <img src={pongImg} onClick={() => renderArcade(playPong)}/>
-        <img src={pongImg} onClick={() => renderArcade(playPong)}/>
+    <div className={`arcade-machine neo-geo on`}>
+      <div className="arcade-header">
+        <h1>NICKY-DOVER™️</h1>
+        <div className="games">
+          <NavLink exact to="/projects/arcade/pong" activeClassName="selected">
+            <img src={pongImg} alt="Pong"/>
+          </NavLink>
+          <NavLink exact to="/projects/arcade/pong" activeClassName="selected">
+            <img src={pongImg} alt="Pong"/>
+          </NavLink>
+          <NavLink exact to="/projects/arcade/pong" activeClassName="selected">
+            <img src={pongImg} alt="Pong"/>
+          </NavLink>
+          <NavLink exact to="/projects/arcade/pong" activeClassName="selected">
+            <img src={pongImg} alt="Pong"/>
+          </NavLink>
+        </div>
       </div>
+      <div id="arcade-main"><Route exact path="/projects/arcade" component={GameScreen}/></div>
     </div>
-    <div id="arcade-main"><canvas width="1000" height="600"></canvas></div>
-    </div>
-    <br/>
+    <Switch>
+      <Route path="/projects/arcade/pong" component={Pong}/>
+    </Switch>
   </div>)
 }
 
