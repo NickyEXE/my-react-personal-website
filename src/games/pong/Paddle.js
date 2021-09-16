@@ -17,7 +17,6 @@ export default class Paddle {
   }
 
   checkCollision = (ball) => {
-      console.log("checking")
       return !!((this.y <= (ball.y + ball.r)) && (this.y + this.config.paddleHeight >= (ball.y - ball.r)))
   }
 
