@@ -3,7 +3,6 @@ import React from 'react';
 import pongImg from "../../assets/photos/PONG.png"
 import pong from '../../games/pong/pong';
 import PlayGame from "../games/PlayGame";
-import GameScreen from "../games/GameScreen";
 import { Route, Switch, NavLink } from 'react-router-dom';
 
 const Arcade = () => {
