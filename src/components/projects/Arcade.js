@@ -1,7 +1,8 @@
 
 import React from 'react';
 import pongImg from "../../assets/photos/PONG.png"
-import Pong from "../games/Pong";
+import pong from '../../games/pong/pong';
+import PlayGame from "../games/PlayGame";
 import GameScreen from "../games/GameScreen";
 import { Route, Switch, NavLink } from 'react-router-dom';
 
@@ -27,10 +28,11 @@ const Arcade = () => {
           </NavLink>
         </div>
       </div>
-      <div id="arcade-main"><Route exact path="/projects/arcade" component={GameScreen}/></div>
+      <div id="arcade-main"></div>
     </div>
     <Switch>
-      <Route path="/projects/arcade/pong" component={Pong}/>
+      <Route path="/projects/arcade/pong" render={() => <PlayGame game={pong}/>}/>
+      <Route exact path="/projects/arcade" render={() => <PlayGame game={()=>{}}/>}/>
     </Switch>
   </div>)
 }
