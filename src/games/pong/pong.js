@@ -1,5 +1,6 @@
 import Paddle from "./Paddle"
 export default function playPong(element){
+  element.innerHTML = ""
   const canvas = document.createElement("canvas")
   canvas.tabIndex = "-1"
   element.append(canvas)
@@ -12,9 +13,9 @@ export default function playPong(element){
       paddleWidth: 10,
       paddleHeight: 80,
       paddleSpeed: 8,
-      ballXSpeed: 9,
-      ballYSpeed: 3,
-      ballSlice: 4
+      ballXSpeed: 8,
+      ballYSpeed: 2.5,
+      ballSlice: 3
   }
 
   canvas.width = config.canvasWidth
