@@ -23,6 +23,9 @@ const ProjectSidebar = () => {
     <NavLink exact to="/projects/SlackShameHider" activeClassName="chosen">
         <span>Slack Shame Hider</span>
     </NavLink>
+    <NavLink exact to="/projects/Arcade" activeClassName="chosen">
+        <span>Arcade</span>
+    </NavLink>
     <NavLink to="/projects" id="view-all">
         <span>Go back to all projects</span>
     </NavLink>
