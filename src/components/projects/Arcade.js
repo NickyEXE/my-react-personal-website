@@ -4,7 +4,7 @@ import playPong from '../../games/pong/pong';
 const Arcade = () => {
   return (<div id="arcade">
     <p>This portion of the website works best in the browser.</p>
-    <div tabindex="-1" id="arcade-main"></div>
+    <div id="arcade-main"></div>
     <br/>
     <button onClick={() => playPong(document.getElementById("arcade-main"))}>Pong</button>
   </div>)
