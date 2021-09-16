@@ -219,7 +219,12 @@ canvas {
     /* margin: 0 0 4em 0; */
 }
 
-.arcade-machine.on{
+#arcade-main {
+    width: 1000;
+    height: 600;
+}
+
+.arcade-machine{
     margin: 0 auto;
     max-width: 900px;
     border: .4em solid white;
@@ -234,5 +239,19 @@ canvas {
     background: rgb(255,0,0);
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,136,0,1) 100%);
     font-family: serif;
-    border-bottom: .4em solid white;
+
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
+    margin-bottom: 1em;
+}
+
+.games img {
+    max-width: 200px;
+    height: 150px;
+    border-radius: 1em;
+    border: .2em solid white;
 }
