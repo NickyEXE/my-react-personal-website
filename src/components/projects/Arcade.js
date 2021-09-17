@@ -2,6 +2,7 @@
 import React from 'react';
 import pongImg from "../../assets/photos/PONG.png"
 import pong from '../../games/pong/pong';
+import divekick from '../../games/divekick/Divekick';
 import PlayGame from "../games/PlayGame";
 import { Route, Switch, NavLink } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ const Arcade = () => {
 
   return (<div id="arcade">
     <p>This portion of the website works best in the browser.</p>
+    <p>These games are all better played with two people.</p>
     <div className={`arcade-machine neo-geo on`}>
       <div className="arcade-header">
         <h1>NICKY-DOVER™️</h1>
@@ -16,14 +18,8 @@ const Arcade = () => {
           <NavLink exact to="/projects/arcade/pong" activeClassName="selected">
             <img src={pongImg} alt="Pong"/>
           </NavLink>
-          <NavLink exact to="/projects/arcade/pong" activeClassName="selected">
-            <img src={pongImg} alt="Pong"/>
-          </NavLink>
-          <NavLink exact to="/projects/arcade/pong" activeClassName="selected">
-            <img src={pongImg} alt="Pong"/>
-          </NavLink>
-          <NavLink exact to="/projects/arcade/pong" activeClassName="selected">
-            <img src={pongImg} alt="Pong"/>
+          <NavLink exact to="/projects/arcade/divekick" activeClassName="selected">
+            <img src={pongImg} alt="Divekick"/>
           </NavLink>
         </div>
       </div>
@@ -31,6 +27,7 @@ const Arcade = () => {
     </div>
     <Switch>
       <Route path="/projects/arcade/pong" render={() => <PlayGame game={pong}/>}/>
+      <Route path="/projects/arcade/divekick" render={() => <PlayGame game={divekick}/>}/>
       <Route exact path="/projects/arcade" render={() => <PlayGame game={()=>{}}/>}/>
     </Switch>
   </div>)
