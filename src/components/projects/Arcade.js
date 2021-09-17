@@ -4,6 +4,7 @@ import pongImg from "../../assets/photos/PONG.png";
 import divekickImg from "../../assets/photos/divekick.png";
 import pong from '../games/js/pong/pong';
 import divekick from '../games/js/divekick/Divekick';
+import select from '../games/js/game-select/select';
 import PlayGame from "../games/PlayGame";
 import PongReadme from "../games/readmes/PongReadme"
 import DivekickReadme from "../games/readmes/DivekickReadme"
@@ -32,7 +33,7 @@ const Arcade = () => {
         <Switch>
           <Route path="/projects/arcade/pong" render={() => <><PlayGame game={pong}/><PongReadme/></>}/>
           <Route path="/projects/arcade/divekick" render={() => <><PlayGame game={divekick}/><DivekickReadme/></>}/>
-          <Route exact path="/projects/arcade" render={() => <><PlayGame game={()=>{return()=>{}}}/><SelectReadme/></>}/>
+          <Route exact path="/projects/arcade" render={() => <><PlayGame game={select}/><SelectReadme/></>}/>
         </Switch>
       </div>
     </div>
