@@ -1,4 +1,3 @@
-import Avatar from "./Avatar.js"
 import slidapter from "./slidapter.js"
 import imageAdapter from "./ImageAdapter.js"
 import Game from "./Game"
