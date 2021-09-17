@@ -109,12 +109,12 @@ function loadAllImages(){
         image.alt = key
         images[key] = image
         image.onload = () => {
-          console.log("image loaded!")
+          console.log("image loaded!", image)
           if (++images.loaded === 9){
           resolve(images)
           }}
         })
-      setTimeout(resolve, 5000)
+      setTimeout(resolve, 8000)
       images.loaded = 0
     })
 }
