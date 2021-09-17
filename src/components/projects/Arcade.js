@@ -28,7 +28,7 @@ const Arcade = () => {
     <Switch>
       <Route path="/projects/arcade/pong" render={() => <PlayGame game={pong}/>}/>
       <Route path="/projects/arcade/divekick" render={() => <PlayGame game={divekick}/>}/>
-      <Route exact path="/projects/arcade" render={() => <PlayGame game={()=>{}}/>}/>
+      <Route exact path="/projects/arcade" render={() => <PlayGame game={()=>{return()=>{}}}/>}/>
     </Switch>
   </div>)
 }

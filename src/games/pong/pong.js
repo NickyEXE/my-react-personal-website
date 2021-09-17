@@ -132,4 +132,10 @@ export default function playPong(canvas){
   }
 
   animate()
+
+  function cleanup(){
+    canvas.removeEventListener("keydown", handleKeyDown)
+    canvas.removeEventListener("keyup", handleKeyUp)
+  }
+  return cleanup
 }

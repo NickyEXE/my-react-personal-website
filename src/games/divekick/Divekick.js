@@ -8,6 +8,7 @@ export default async function DiveKick(canvas){
   Avatar.initializeAvatarsAndGameConstants(canvas)
   const gracie = new Avatar("Gracie", Avatar.avatarWidth, 1)
   const nicky = new Avatar("Nicky", canvas.width - (2*Avatar.avatarWidth), -1)
+  let animationFrame
   function loop(){
       Avatar.executeCharacterMovement()
       const ctx = canvas.getContext('2d');
@@ -23,7 +24,7 @@ export default async function DiveKick(canvas){
       ctx.fillStyle = "yellow";
       ctx.fillText(`Round ${Avatar.round()}`, canvas.width/2, 80)
       Avatar.justWon && ctx.fillText(`${Avatar.lastWinner.toUpperCase()} WINS`, canvas.width/2, canvas.height/2)
-      requestAnimationFrame(loop)
+      animationFrame = requestAnimationFrame(loop)
   }
 
   function drawImage(ctx, avatar){
@@ -80,13 +81,19 @@ export default async function DiveKick(canvas){
       "avatarHeight": Avatar.avatarHeight
   }
 
-  document.addEventListener("keydown", handleKeyDown)
-  document.addEventListener("keyup", handleKeyUp)
+  canvas.addEventListener("keydown", handleKeyDown)
+  canvas.addEventListener("keyup", handleKeyUp)
   // document.getElementById("sliders").addEventListener("change", handleSlider)
   // document.getElementById("reset-defaults").addEventListener("click", resetDefaults)
-  console.log(canvas)
 
   loop()
+
+  function cleanup(){
+    canvas.removeEventListener("keydown", handleKeyDown)
+    canvas.removeEventListener("keyup", handleKeyUp)
+    cancelAnimationFrame(animationFrame)
+  }
+  return cleanup
 }
 
 function loadAllImages(){

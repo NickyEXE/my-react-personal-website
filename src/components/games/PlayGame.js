@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 
 export default function PlayGame({game}){
   useEffect(() => {
-    console.log("running!")
     const arcadeMain = document.getElementById("arcade-main")
     arcadeMain.innerHTML = ""
     const canvas = document.createElement("canvas")
@@ -11,9 +10,13 @@ export default function PlayGame({game}){
     canvas.height = 800
     canvas.tabIndex = "-1"
     arcadeMain.append(canvas)
-    game(canvas)
+    const cleanup = game(canvas)
     return () => {
       arcadeMain.innerHTML = ""
+      console.dir(game)
+      if (typeof cleanup == "function"){cleanup()} else {
+        cleanup.then(cleanUpFunction => cleanUpFunction())
+      }
     }
   }, [game])
   // }, [])
