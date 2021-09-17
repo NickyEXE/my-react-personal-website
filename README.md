@@ -1,3 +1,19 @@
+# Nicky's Personal Website!
+
+This Readme's going to be a work in progress.
+
+To do:
+- Link the readmes for all the games I ported to the arcade.
+- Explain what the heck I'm doing with the arcade.
+- Refactor the arcade.
+
+### The Arcade
+
+In order to add a game to the arcade, use the PlayGame component passing in a function that runs a game. This function must:
+- Take in the canvas as an argument, and render to the canvas
+- Either return a cleanup function, or resolve to a cleanup function in the case of an asynchronous function (the latter was implemented to deal with waiting to load all images before starting a game.)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

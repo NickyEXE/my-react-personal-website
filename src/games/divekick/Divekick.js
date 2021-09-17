@@ -4,6 +4,7 @@ import imageAdapter from "./ImageAdapter.js"
 
 export default async function DiveKick(canvas){
   const images = await loadAllImages()
+  canvas.style.backgroundImage = `url(${images.background.src})`
   const config = slidapter(canvas)
   Avatar.initializeAvatarsAndGameConstants(canvas)
   const gracie = new Avatar("Gracie", Avatar.avatarWidth, 1)
@@ -12,6 +13,7 @@ export default async function DiveKick(canvas){
   function loop(){
       Avatar.executeCharacterMovement()
       const ctx = canvas.getContext('2d');
+      ctx.drawImage(images.background, 0, 0)
       ctx.clearRect(0, 0, canvas.width, canvas.height)
       drawImage(ctx, gracie)
       drawImage(ctx, nicky)
@@ -104,9 +106,10 @@ function loadAllImages(){
         image.src = images[key]
         image.alt = key
         images[key] = image
-        image.onload = () => {if (++images.loaded === 8){
+        image.onload = () => {
+          if (++images.loaded === 9){
           resolve(images)
-        }}
+          }}
         })
       images.loaded = 0
     })
