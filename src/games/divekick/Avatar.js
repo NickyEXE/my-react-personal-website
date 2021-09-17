@@ -1,6 +1,8 @@
 import ImageAdapter from "./ImageAdapter"
 
 export default class Avatar{
+
+  static all = []
   constructor(name, x, direction){
       this.name = name
       this.x = x
@@ -12,7 +14,6 @@ export default class Avatar{
       this.charState = "ground"
       this.constructor.all.push(this)
   }
-
 
   otherAvatar(){
       return this.constructor.all.find(avatar => avatar !== this)
@@ -85,7 +86,6 @@ export default class Avatar{
 
   static initializeAvatarsAndGameConstants(canvas){
       this.canvas = canvas
-      this.all = []
       this.lastWinner = ""
       this.avatarWidth = 50
       this.avatarHeight = 100
@@ -134,6 +134,7 @@ export default class Avatar{
   }
 
   static stateCheck(){
+    console.dir(this)
       if((Math.abs(Avatar.all[0].x - Avatar.all[1].x) <= this.avatarWidth) && (Math.abs(Avatar.all[0].y - Avatar.all[1].y) <= this.avatarHeight)){
           Avatar.all[0].y < Avatar.all[1].y ? Avatar.win(Avatar.all[0]) : Avatar.win(Avatar.all[1])
       }

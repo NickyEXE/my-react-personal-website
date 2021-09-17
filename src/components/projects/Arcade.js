@@ -11,7 +11,6 @@ const Arcade = () => {
 
   return (<div id="arcade">
     <p>This portion of the website works best in the browser.</p>
-    <p>These games are all better played with two people.</p>
     <div className={`arcade-machine neo-geo on`}>
       <div className="arcade-header">
         <h1>NICKY-DOVER™️</h1>
