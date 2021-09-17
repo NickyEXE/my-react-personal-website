@@ -13,7 +13,6 @@ export default function PlayGame({game}){
     const cleanup = game(canvas)
     return () => {
       arcadeMain.innerHTML = ""
-      console.dir(game)
       if (typeof cleanup == "function"){cleanup()} else {
         cleanup.then(cleanUpFunction => cleanUpFunction())
       }
