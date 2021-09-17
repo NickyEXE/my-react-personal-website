@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 body{
     color: white;
 }
@@ -238,8 +240,10 @@ canvas {
 .neo-geo {
     background: rgb(255,0,0);
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,136,0,1) 100%);
-    font-family: serif;
+}
 
+.arcade-header {
+    font-family: serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .games {
@@ -252,6 +256,19 @@ canvas {
 .games img {
     max-width: 200px;
     height: 150px;
-    border-radius: 1em;
+    border-radius: .5em;
     border: .2em solid white;
+}
+
+#arcade-readme {
+    background-color: black;
+    margin: 1em;
+    padding: 1em;
+
+}
+
+#arcade-readme h1 {
+    font-size: 3em;
+    margin: 0em;
+    font-family: "Monoton", sans-serif
 }
