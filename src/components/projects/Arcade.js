@@ -1,6 +1,7 @@
 
 import React from 'react';
-import pongImg from "../../assets/photos/PONG.png"
+import pongImg from "../../assets/photos/PONG.png";
+import divekickImg from "../../assets/photos/divekick.png";
 import pong from '../../games/pong/pong';
 import divekick from '../../games/divekick/Divekick';
 import PlayGame from "../games/PlayGame";
@@ -19,7 +20,7 @@ const Arcade = () => {
             <img src={pongImg} alt="Pong"/>
           </NavLink>
           <NavLink exact to="/projects/arcade/divekick" activeClassName="selected">
-            <img src={pongImg} alt="Divekick"/>
+            <img src={divekickImg} alt="Divekick"/>
           </NavLink>
         </div>
       </div>
