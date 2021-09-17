@@ -109,6 +109,7 @@ function loadAllImages(){
         image.alt = key
         images[key] = image
         image.onload = () => {
+          console.log("image loaded!")
           if (++images.loaded === 9){
           resolve(images)
           }}

@@ -10,7 +10,6 @@ export default class Game {
 
   loop = () => {
     const {canvas, images, player1, player2} = this
-    console.log("images in loop", images)
     Avatar.executeCharacterMovement()
     const ctx = canvas.getContext('2d');
     ctx.drawImage(images.background, 0, 0)
