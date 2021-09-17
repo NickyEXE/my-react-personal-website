@@ -33,6 +33,7 @@ export default class Game {
 
   initialize(){
     Avatar.initializeAvatarsAndGameConstants(this.canvas)
+    Avatar.all = []
     this.player1 = new Avatar("Gracie", Avatar.avatarWidth, 1)
     this.player2 = new Avatar("Nicky", this.canvas.width - (2*Avatar.avatarWidth), -1)
     this.initialKeyBinds()
