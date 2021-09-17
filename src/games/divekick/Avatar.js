@@ -89,13 +89,13 @@ export default class Avatar{
       this.lastWinner = ""
       this.avatarWidth = 50
       this.avatarHeight = 100
-      this.jumpInitialVelocity = -5
-      this.kickYSpeed = 3
-      this.kickXSpeed = 2.8
-      this.kickbackYSpeed = -3
-      this.kickbackXSpeed = -1.5
+      this.jumpInitialVelocity = -20
+      this.kickYSpeed = 12
+      this.kickXSpeed = 12
+      this.kickbackYSpeed = -12
+      this.kickbackXSpeed = -6
       this.gameSpeed = 2
-      this.gravity = 0.02
+      this.gravity = 0.15
       this.initialAvatarY = canvas.height - Avatar.avatarHeight
       this.justWon = false
   }

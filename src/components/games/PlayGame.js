@@ -13,7 +13,7 @@ export default function PlayGame({game}){
     arcadeMain.append(canvas)
     game(canvas)
     return () => {
-      document.getElementById("gameScreen").remove()
+      arcadeMain.innerHTML = ""
     }
   }, [game])
   // }, [])

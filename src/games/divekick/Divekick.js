@@ -3,12 +3,12 @@ import slidapter from "./slidapter.js"
 import imageAdapter from "./ImageAdapter.js"
 
 export default async function DiveKick(canvas){
-  await loadAllImages()
+  const images = await loadAllImages()
   const config = slidapter(canvas)
   Avatar.initializeAvatarsAndGameConstants(canvas)
   const gracie = new Avatar("Gracie", Avatar.avatarWidth, 1)
   const nicky = new Avatar("Nicky", canvas.width - (2*Avatar.avatarWidth), -1)
-  function renderer(){
+  function loop(){
       Avatar.executeCharacterMovement()
       const ctx = canvas.getContext('2d');
       ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -22,21 +22,15 @@ export default async function DiveKick(canvas){
       ctx.fillText(`${nicky.name} - ${nicky.score}`, canvas.width - 100, 80)
       ctx.fillStyle = "yellow";
       ctx.fillText(`Round ${Avatar.round()}`, canvas.width/2, 80)
-
       Avatar.justWon && ctx.fillText(`${Avatar.lastWinner.toUpperCase()} WINS`, canvas.width/2, canvas.height/2)
+      requestAnimationFrame(loop)
   }
 
   function drawImage(ctx, avatar){
-    const image = imageAdapter[avatar.imageIdWithDirection()]
+    const image = images[avatar.imageIdWithDirection()]
     !!avatar.knockedOut() ? ctx.drawImage(image, avatar.x, canvas.height-Avatar.avatarWidth, Avatar.avatarHeight, Avatar.avatarWidth) : ctx.drawImage(image, avatar.x, avatar.y, Avatar.avatarWidth, Avatar.avatarHeight)
   }
 
-  renderer()
-
-
-  //JavaScript only allows one button keyDown or keyUp to register at a time.
-  //To get around this, I kept the key's pressed status in this object along with the function to be executed with it.
-  //Now, whenever there's a keydown or keyup, it iterates through each of these and runs their relevant function if they're clicked.
   const pressedKeys = {
       "a": {pressed: false,
           func: () => gracie.dive()},
@@ -90,22 +84,23 @@ export default async function DiveKick(canvas){
   document.addEventListener("keyup", handleKeyUp)
   // document.getElementById("sliders").addEventListener("change", handleSlider)
   // document.getElementById("reset-defaults").addEventListener("click", resetDefaults)
+  console.log(canvas)
 
-
-  setInterval(renderer, Avatar.gameSpeed)
+  loop()
 }
 
 function loadAllImages(){
     return new Promise(resolve => {
-    Object.keys(imageAdapter).forEach(key => {
+    let images = {...imageAdapter}
+    Object.keys(images).forEach(key => {
         const image = new Image()
-        image.src = imageAdapter[key]
+        image.src = images[key]
         image.alt = key
-        imageAdapter[key] = image
-        image.onload = () => {if (++imageAdapter.loaded === 8){
-          resolve("images loaded!")
+        images[key] = image
+        image.onload = () => {if (++images.loaded === 8){
+          resolve(images)
         }}
         })
-      imageAdapter.loaded = 0
+      images.loaded = 0
     })
 }
