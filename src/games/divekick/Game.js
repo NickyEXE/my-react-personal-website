@@ -1,6 +1,4 @@
 import Avatar from "./Avatar.js"
-import imageAdapter from "./ImageAdapter.js"
-
 
 export default class Game {
 
