@@ -3,6 +3,7 @@ import imageAdapter from "./ImageAdapter.js"
 import Game from "./Game"
 
 export default async function Divekick(canvas){
+  console.log("loading")
   const images = await loadAllImages()
   canvas.style.backgroundImage = `url(${images.background.src})`
   console.log("images in main call", images)
