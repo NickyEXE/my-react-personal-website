@@ -114,6 +114,7 @@ function loadAllImages(){
           resolve(images)
           }}
         })
+      setTimeout(resolve, 5000)
       images.loaded = 0
     })
 }
