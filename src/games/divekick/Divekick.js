@@ -102,6 +102,7 @@ export default async function Divekick(canvas){
 function loadAllImages(){
     return new Promise(resolve => {
     let images = {...imageAdapter}
+    console.log("images in load all images", images)
     Object.keys(images).forEach(key => {
         const image = new Image()
         image.src = images[key]
