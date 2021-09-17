@@ -17,7 +17,7 @@ function App() {
 
   // wake up my apps
   useEffect(() => {
-    fetch("http://singwithnicky.herokuapp.com/ping", {mode: 'no-cors'})
+    fetch("https://singwithnicky.herokuapp.com/ping", {mode: 'no-cors'})
     fetch("https://lit-wildwood-84809.herokuapp.com/scores/highscore", {mode: 'no-cors'})
     fetch("https://serene-scrubland-24770.herokuapp.com/ping")
     }, [])

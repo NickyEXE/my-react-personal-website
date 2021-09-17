@@ -5,6 +5,7 @@ import Game from "./Game"
 export default async function Divekick(canvas){
   const images = await loadAllImages()
   canvas.style.backgroundImage = `url(${images.background.src})`
+  console.log("images in main call", images)
   const app = new Game(canvas, images)
   // // const config = slidapter(canvas)
   // Avatar.initializeAvatarsAndGameConstants(canvas)
